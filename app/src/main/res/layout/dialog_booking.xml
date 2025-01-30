@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Ticket"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/et_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:hint="Full Name"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:background="@drawable/border"
+        android:layout_marginTop="10dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="@color/black"
+        android:buttonTint="@color/black"
+        android:outlineSpotShadowColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:outlineSpotShadowColor="@color/black"/>
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/et_dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth (DD/MM/YYYY)"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/et_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/border"/>
+
+    <Button
+        android:id="@+id/btn_book_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Confirm Booking"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        />
+</LinearLayout>

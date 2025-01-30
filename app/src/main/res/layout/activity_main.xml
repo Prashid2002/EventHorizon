@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4DFDF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="EventHorizon"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/search_border"
+        android:elevation="10dp"
+        android:iconifiedByDefault="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:queryHint="Search Events..."
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Available Events"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <!-- RecyclerView taking up remaining space -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:indeterminate="true"/>
+    <!-- BottomNavigationView at the bottom -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/EventRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:backgroundTint="#F4DFDF"
+        android:paddingLeft="10dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:backgroundTint="@color/orange"
+        app:elevation="10dp"
+        app:menu="@menu/my_navigation_items" />
+
+</LinearLayout>

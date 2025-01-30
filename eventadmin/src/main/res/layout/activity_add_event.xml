@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/addEventTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Event"
+        android:textSize="25sp"
+        android:layout_marginTop="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Event Title EditText -->
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Title"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="#B2000000"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border1" />
+
+    <!-- Event Venue EditText -->
+    <EditText
+        android:id="@+id/venueEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Venue"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#B2000000"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border1" />
+
+    <!-- Event Time EditText -->
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Time and Date"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textColorHint="#B2000000"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border1"/>
+
+    <!-- Event Price EditText -->
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Price"
+        android:textColor="@color/black"
+        android:textColorHint="#B2000000"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border1" />
+
+    <!-- Button for Adding Event -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Event"
+        android:textSize="16sp"
+        android:background="#4D4949"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@color/white"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <!-- ImageView for the image -->
+        <ImageView
+            android:id="@+id/card_image"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitCenter"
+            />
+
+        <!-- Content on the right side -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Event Title"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Venue -->
+            <TextView
+                android:id="@+id/card_venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Venue: XYZ Auditorium"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!-- Time and Date -->
+            <TextView
+                android:id="@+id/card_time_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Time  Date: 5:00 PM, Jan 30"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/card_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: $50"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Book Now Button -->
+            <Button
+                android:id="@+id/book_now_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#4D4949"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="Book Now"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

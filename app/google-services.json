@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "552122390103",
+    "project_id": "eventhorizon-ef420",
+    "storage_bucket": "eventhorizon-ef420.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552122390103:android:cb0088cffdbac2cd117512",
+        "android_client_info": {
+          "package_name": "com.example.api"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADCI87WX9ffII1On_9d6EPZEQ7b-UY0kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -23,7 +23,7 @@
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/EventHorizon.git
+   git clone https://github.com/Prashid2002/EventHorizon.git
    ```
 2. Open the project in **Android Studio**.
 3. Sync Gradle and ensure dependencies are installed.
